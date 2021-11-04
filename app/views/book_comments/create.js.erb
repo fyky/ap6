@@ -1,0 +1,7 @@
+$("#book_comment_form").val("");
+
+
+$(".book_detail").html("<%= j(render partial: 'books/commentcount', book: @comment.book) %>");
+
+
+$(".book_comment").html("<%= j(render partial: 'book_comments/comment', book_comments: @comment.book.book_comments) %>");
