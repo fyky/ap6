@@ -17,8 +17,4 @@ class BookCommentsController < ApplicationController
     params.require(:book_comment).permit(:comment)
   end
   
-  # def set_comment
-  #   @book_comment = current_user.book_comments.find(params[:book_id])
-  # end
-
 end
